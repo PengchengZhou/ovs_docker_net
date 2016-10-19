@@ -20,7 +20,6 @@ if hosts:
 
 if switches:
 	print "Removing switches:"
-	print "hello"
 	for s in switches:
 		cmd = "".join(["ovs-vsctl del-br ", s])
 		execcmd(cmd, "Error while removing switches")
